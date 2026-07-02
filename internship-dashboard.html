@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">Internship Hub</div>
+        <nav class="topnav">
+            <a href="website.html">Home</a>
+            <a href="internship-dashboard.html" class="active">Dashboard</a>
+            <a href="myresume.html">Resume</a>
+            <a href="#support">Support</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <section class="hero-card">
+            <div>
+                <span class="badge">Internship Dashboard</span>
+                <h1>Track your progress, applications, and tasks</h1>
+                <p>Stay organized with a clean overview of your internship journey, upcoming milestones, and company interactions.</p>
+            </div>
+            <div class="hero-actions">
+                <button class="primary-btn">New Application</button>
+                <button class="secondary-btn">Review Tasks</button>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <h2>12</h2>
+                <p>Applications Sent</p>
+            </article>
+            <article class="stat-card">
+                <h2>04</h2>
+                <p>Interviews Scheduled</p>
+            </article>
+            <article class="stat-card">
+                <h2>18</h2>
+                <p>Tasks Assigned</p>
+            </article>
+            <article class="stat-card">
+                <h2>08</h2>
+                <p>Tasks Completed</p>
+            </article>
+        </section>
+
+        <section class="dashboard-grid">
+            <div class="panel panel-left">
+                <div class="panel-header">
+                    <h3>Today’s Task List</h3>
+                    <span>Updated just now</span>
+                </div>
+                <ul class="task-list">
+                    <li>
+                        <span>Prepare final project report</span>
+                        <small>Due: Today</small>
+                    </li>
+                    <li>
+                        <span>Submit code review for Module 2</span>
+                        <small>Due: Tomorrow</small>
+                    </li>
+                    <li>
+                        <span>Practice interview questions</span>
+                        <small>Due: 2 days</small>
+                    </li>
+                    <li>
+                        <span>Update LinkedIn internship status</span>
+                        <small>Due: 3 days</small>
+                    </li>
+                </ul>
+
+                <div class="panel-footer">
+                    <button class="ghost-btn">View all tasks</button>
+                </div>
+            </div>
+
+            <div class="panel panel-right">
+                <div class="panel-header">
+                    <h3>Application Pipeline</h3>
+                    <span>Most recent</span>
+                </div>
+                <div class="pipeline-card">
+                    <div>
+                        <strong>Frontend Intern</strong>
+                        <p>Acme Tech — Interview scheduled</p>
+                    </div>
+                    <span class="status status-blue">Interview</span>
+                </div>
+                <div class="pipeline-card">
+                    <div>
+                        <strong>Data Analyst Intern</strong>
+                        <p>Bright Labs — Application sent</p>
+                    </div>
+                    <span class="status status-yellow">Pending</span>
+                </div>
+                <div class="pipeline-card">
+                    <div>
+                        <strong>Marketing Intern</strong>
+                        <p>Growth Studio — Offer received</p>
+                    </div>
+                    <span class="status status-green">Offer</span>
+                </div>
+
+                <div class="insights">
+                    <h4>Next milestone</h4>
+                    <p>Complete your final project presentation before Friday to finalize the internship submission.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="notes-card" id="support">
+            <div>
+                <h3>Mentor Notes</h3>
+                <p>Remember to ask for feedback after every demo and keep your progress journal updated in the shared drive.</p>
+            </div>
+            <button class="primary-btn">Send update</button>
+        </section>
+    </main>
+</body>
+</html>

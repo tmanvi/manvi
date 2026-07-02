@@ -1,0 +1,42 @@
+.right-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 70%;
+}
+.top-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+span {
+  color: #233158;
+  font-weight: 500;
+}
+
+.bottom-profile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2rem;
+  padding: 10px;
+}
+
+.profile-div p:last-of-type {
+  color: rgb(86, 85, 85);
+  text-align: justify;
+  line-height: 25px;
+}
+
+.experience-div ul,
+.achive-div ul,
+.hobbies-div ul {
+  color: rgb(86, 85, 85);
+  line-height: 25px;
+  margin-left: 10px;
+}
+
