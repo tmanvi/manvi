@@ -1,0 +1,600 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#faf5ef;
+    overflow-x:hidden;
+}
+
+/* Music Button */
+
+#musicBtn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#8B0000;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    z-index:9999;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+    transition:.4s;
+}
+
+#musicBtn:hover{
+    transform:scale(1.1);
+    background:#d4af37;
+}
+
+/* Envelope */
+
+#envelope{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(135deg,#7a0019,#c89b3c);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.letter{
+    width:360px;
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+    animation:zoom 1.5s ease;
+}
+
+.letter h2{
+    font-family:'Cinzel',serif;
+    color:#8B0000;
+    margin-bottom:15px;
+}
+
+.letter p{
+    margin:15px 0;
+}
+
+#openBtn{
+    padding:12px 30px;
+    border:none;
+    background:#8B0000;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#openBtn:hover{
+    background:#d4af37;
+    transform:scale(1.05);
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:url(images/floral-bg.jpg) center/cover no-repeat;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    color:#fff;
+    padding:20px;
+}
+
+.overlay h3{
+    font-size:28px;
+    color:#ffd700;
+    margin-bottom:20px;
+}
+
+.overlay h1{
+    font-family:'Cinzel',serif;
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.overlay p{
+    max-width:700px;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 35px;
+    background:#d4af37;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#8B0000;
+    transform:translateY(-5px);
+}
+
+/* Animation */
+
+@keyframes zoom{
+    from{
+        opacity:0;
+        transform:scale(.5);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+/* =========================
+   COUPLE SECTION
+========================= */
+
+.couple{
+    padding:100px 8%;
+    background:#fff8f2;
+    text-align:center;
+}
+
+.couple h2{
+    font-size:42px;
+    color:#8B0000;
+    font-family:'Cinzel', serif;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.person{
+    width:320px;
+    background:#ffffff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+    transition:.5s;
+}
+
+.person:hover{
+    transform:translateY(-12px);
+}
+
+.person img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+}
+
+.person h3{
+    margin-top:20px;
+    color:#8B0000;
+    font-size:28px;
+    font-family:'Cinzel', serif;
+}
+
+.person p{
+    color:#666;
+    margin:15px 0 25px;
+}
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+#countdown{
+    padding:100px 20px;
+    background:linear-gradient(135deg,#8B0000,#c89b3c);
+    text-align:center;
+    color:white;
+}
+
+#countdown h2{
+    font-size:42px;
+    margin-bottom:50px;
+    font-family:'Cinzel', serif;
+}
+
+.timer{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.timer div{
+    width:150px;
+    padding:30px;
+    background:rgba(255,255,255,.15);
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+    transition:.4s;
+}
+
+.timer div:hover{
+    transform:scale(1.08);
+}
+
+.timer span{
+    display:block;
+    font-size:48px;
+    font-weight:bold;
+    color:#FFD700;
+}
+
+.timer p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* =========================
+   DETAILS SECTION
+========================= */
+
+.venue{
+    padding:80px 10%;
+    background:#fff8f3;
+}
+
+.venue h2{
+    text-align:center;
+    font-size:40px;
+    color:#b22222;
+    margin-bottom:40px;
+}
+
+.venue-box{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.venue-box img{
+    width:50%;
+    height:450px;
+    object-fit:cover;
+}
+
+.venue-info{
+    padding:30px;
+}
+
+.venue-info h3{
+    font-size:35px;
+    color:#8b0000;
+    margin-bottom:20px;
+}
+
+.venue-info p{
+    font-size:20px;
+    margin:15px 0;
+    color:#555;
+}
+
+.venue-info button{
+    margin-top:20px;
+    padding:15px 35px;
+    background:#b22222;
+    color:white;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.4s;
+}
+
+.venue-info button:hover{
+    background:#8b0000;
+    transform:scale(1.05);
+}
+/* =========================
+   HEART ANIMATION
+========================= */
+
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:#ff4d6d;
+    animation:floatHeart 8s linear infinite;
+    pointer-events:none;
+    z-index:1;
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:translateY(0) scale(.5);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-120vh) scale(1.5);
+        opacity:0;
+    }
+
+}
+/* ==========================
+   GALLERY SECTION
+========================== */
+
+.gallery{
+    padding:100px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:42px;
+    color:#8B0000;
+    margin-bottom:50px;
+    font-family:'Cinzel', serif;
+}
+
+.images{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.images img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.5s;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.images img:hover{
+    transform:scale(1.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+/* ==========================
+   RSVP SECTION
+========================== */
+
+.rsvp{
+    padding:100px 8%;
+    background:#fff8f2;
+    text-align:center;
+}
+
+.rsvp h2{
+    font-size:42px;
+    color:#8B0000;
+    margin-bottom:40px;
+    font-family:'Cinzel', serif;
+}
+
+.rsvp form{
+    max-width:650px;
+    margin:auto;
+}
+
+.rsvp input,
+.rsvp textarea{
+    width:100%;
+    padding:16px;
+    margin:15px 0;
+    border:2px solid #d4af37;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.rsvp textarea{
+    height:140px;
+    resize:none;
+}
+
+.rsvp button{
+    padding:15px 35px;
+    background:#8B0000;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.rsvp button:hover{
+    background:#d4af37;
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   CELEBRATE BUTTON
+========================== */
+
+.celebrate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 10%;
+    background: #fff8f5;
+}
+
+.celebrate-content{
+    flex: 1;
+    font-size: 18px;
+}
+
+.celebrate-image{
+    flex: 1;
+}
+
+.celebrate-image img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#8B0000;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h2{
+    font-family:'Cinzel', serif;
+    margin-bottom:15px;
+}
+
+footer p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* ==========================
+   FLOWER PETALS
+========================== */
+
+.petal{
+    position:fixed;
+    top:-20px;
+    font-size:22px;
+    animation:petalFall linear infinite;
+    pointer-events:none;
+    z-index:999;
+}
+
+@keyframes petalFall{
+
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(110vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.overlay h3{
+    font-size:22px;
+}
+
+.couple h2,
+.gallery h2,
+.rsvp h2,
+.details h2,
+#countdown h2{
+    font-size:32px;
+}
+
+.person{
+    width:100%;
+}
+
+.timer{
+    gap:15px;
+}
+
+.timer div{
+    width:130px;
+    padding:20px;
+}
+
+.timer span{
+    font-size:36px;
+}
+
+.box{
+    padding:25px;
+}
+
+.images{
+    grid-template-columns:1fr;
+}
+
+#musicBtn{
+    width:48px;
+    height:48px;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+    font-size:30px;
+}
+
+.overlay p{
+    font-size:15px;
+}
+
+.btn{
+    padding:12px 28px;
+}
+
+.timer div{
+    width:100px;
+}
+
+.timer span{
+    font-size:30px;
+}
+
+footer p{
+    font-size:15px;
+}
+
+}
